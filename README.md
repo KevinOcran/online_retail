@@ -1,6 +1,5 @@
-# 🛍️ Project \#1: E-commerce Sales Cleanup and Dimensional Modeling (PostgreSQL)
 
-## 🎯 Project Goal
+# Project Goal
 
 The primary objective of this project was to transform a messy, raw e-commerce sales file into a clean, normalized, and load-ready dataset optimized for analytic querying. This was achieved using a two-phase pipeline: **Excel** for rapid data validation and initial cleansing, and **PostgreSQL** for robust data transformation and dimensional modeling.
 
@@ -12,7 +11,7 @@ The primary objective of this project was to transform a messy, raw e-commerce s
 
 -----
 
-## 🧼 Phase 1: Data Cleansing and Validation (Excel)
+## Phase 1: Data Cleansing and Validation (Excel)
 
 The raw dataset was first loaded into Excel to quickly identify and rectify common data quality issues before database loading.
 
@@ -25,7 +24,7 @@ The raw dataset was first loaded into Excel to quickly identify and rectify comm
 
 -----
 
-## 💾 Phase 2: Dimensional Modeling (PostgreSQL)
+## Phase 2: Dimensional Modeling (PostgreSQL)
 
 The two cleaned CSV files were loaded into two fact tables in PostgreSQL (`sales_transactions` and `returns_transactions`). The final stage focused on structuring the data using a **Star Schema** model to enhance query performance and maintain data integrity.
 
@@ -105,7 +104,7 @@ ALTER TABLE sales_transactions DROP COLUMN "Description";
 
 -----
 
-## 📊 Final Data Model and Validation
+## Final Data Model and Validation
 
 The resulting model is optimized for quick analytical reporting.
 
@@ -133,7 +132,7 @@ ORDER BY
 
 -----
 
-### 📂 Repository Files
+### Repository Files
 
 * **`sales_cleaned_excel.csv`:** The main sales data after Excel cleanup.
 * **`returns_cleaned_excel.csv`:** The returns data after Excel cleanup.
